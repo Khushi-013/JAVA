@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+class Std{
+    int RN;
+    String Name;
+    void read(){
+        Scanner sc = new Scanner(System.in);
+        RN = sc.nextInt();
+        Name = sc.nextLine();
+    }
+    void display(){
+        System.out.println("Enter your Name & Roll No");
+        System.out.println("Roll No of Student is :- "+RN+"&"+"Name of Student is :-"+Name);
+    }
+
+   Std()
+   {
+     RN = 0;
+     Name = "Khushi";
+   }
+    Std(int R, String N)
+    {
+        RN = R;
+        Name = N;
+    }
+}
+
+class Main{
+    public static void main(String[] args){
+        Std s1 = new Std(1,"Anushka");
+        s1.display();
+        Std s2 = new Std(2, "Kiran");
+        s2.display();
+    }
+}
